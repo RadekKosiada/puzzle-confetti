@@ -1,0 +1,200 @@
+/* Styles go here */
+/* color palette */
+/* http://www.colourlovers.com/palette/742144/Basic_Colors */
+/* green rgb(0, 128, 0)	 from http://www.december.com/html/spec/color16codes.htm
+  http://www.december.com/html/spec/color16codes.htmll	 */
+
+  /* font-family: 'Cabin Sketch', cursive;
+  font-family: 'Press Start 2P', cursive; */
+
+  * {
+    /* position:relative;
+    box-sizing:border-box;
+    outline:none; */
+  }
+  
+  html, body {
+    height: 100%;
+    background-color:rgb(175, 174, 174);
+  }
+  
+  body {
+    padding: 0;
+    margin:0;
+    font:100%/1.5;
+    font-family:'Press Start 2P', cursive;
+   }
+  
+  h1 {  
+    background:rgb(255,242,0);
+    color: rgb(22,94,247);    
+    padding: 1vw 0.25vw 1vw 0.25vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:1.5vw;   
+    position: relative;
+    margin-top:0;
+    margin: 0 auto;   
+    text-align:center;
+    text-shadow: 2px 2px rgba(255,106,0, 0.3);
+  }
+  
+  #uploadPic, #tryToPuzzle, #wellDone {    
+    box-shadow: 5px 7px rgba(255,0,0, 0.5);
+    margin-bottom: 20px;
+  }
+
+
+  
+  /* button during and after fixing the picture  */
+    #newPuzzle {
+    background: rgb(255,106,0) !important;
+    }
+  
+  
+  /* button when to check if the picture is fixed right */
+    #checkPuzzle {
+  
+    }
+  
+   #newPuzzle, #newPuzzle2, #checkPuzzle, #imageSelectorLabel, .alright  {
+    display: inline-block;
+    text-align: center;
+    padding:0.75vw 1.5vw;
+    background: rgb(0, 128, 0);    
+    color:#fff;    
+    border: none;
+    cursor:pointer;
+    font-size: 0.9vw;
+    transition: all 0.2s;
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-bottom:0;
+    margin-top: 10px;
+    font-family:'Press Start 2P', cursive;
+    /* box-shadow: 2px 3px rgba(255,0,0, 0.5); */
+  
+  }
+  
+  #newPuzzle:hover, #newPuzzle2:hover, #checkPuzzle:hover, #imageSelectorLabel:hover, .alright:hover {   
+    opacity: 1;
+    font-size: 1.1vw;  
+    box-shadow: 4px 6px rgba(255,0,0, 0.5);  
+  }
+
+  .controls {
+    text-align:center;
+  }
+  
+  .controls .button {
+    margin-right: 5px;
+  }
+  
+  /* whole app */
+  #puzzleField {
+    padding:20px;
+  }
+  
+  #puzzleField #imageSelector {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  #puzzleField #imageSelectorLabel {
+    cursor:pointer;
+    
+  }
+  
+  #puzzleCanvas,
+  #resultImage {
+    border:solid 1px #ddd;
+  }
+  
+  #puzzleCanvas, #resultImage {
+    cursor: -webkit-grabbing; 
+    cursor: grabbing;
+    position: relative;
+    margin: 0 auto;
+    display: block;   
+   }
+  
+  #cover  {
+  display: none;
+   width: 100%;
+   height: 100%;
+    background-color: rgb(0, 0, 0, 0.75);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1; 
+  }
+  
+  #canvas-wrap { 
+    position:relative 
+  } 
+
+  #alertMsg3 {
+    display: none;
+    position:absolute; 
+    top:20%; 
+    left:25%; 
+
+    padding: 10px 15px 0 15px;
+    margin: 0 auto; 
+    z-index: 3;    
+    text-align: center;
+    width: 50%;    
+    color: rgb(22,94,247);
+    background-color:  rgb(255,242,0);
+    box-shadow: 5px 7px rgb(255,0,0);
+  }
+
+  #confetti {
+  display: none;
+   width: 100vw;
+   height: 100vw; 
+  background-color: rgb(0, 0, 0, 0.05);
+   position: relative;
+   top: 10%;
+   margin: 0 auto;
+   z-index: 2; 
+  }
+  
+  #alertMsg, #alertMsg2 {
+    display: none; 
+    position: relative;
+    top: 20%;
+    padding: 10px 15px 0 15px;
+    margin: 0 auto; 
+    z-index: 3;    
+    text-align: center;
+    width: 50%;    
+    color: rgb(22,94,247);
+    background-color:  rgb(255,242,0);
+    box-shadow: 5px 7px rgb(255,0,0);
+  }
+  
+  .alert {
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+  }
+  
+  
+  
+  /*             */
+  /*  keyframes  */
+  /*             */
+  
+  @keyframes fadein {
+      from { left: 20px; opacity: 0.5; }
+      to   { left: 0; opacity: 1; }
+  }
+  
