@@ -1,1 +1,54 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="App.css"/><link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Press+Start+2P" rel="stylesheet"><title>Redux me, Style me, Surprise me ;)</title><link href="/static/css/main.2b84dd06.css" rel="stylesheet"></head><body><div id="appMount"></div><div id="cover"><div id="alertMsg"><h1 id="alert1" class="alert">Dieser Bildtyp wird nicht unterstützt</h1><button id="alright1" class="alright">OK</button></div><div id="alertMsg2"><h1 id="alert2" class="alert">Leider sitzen noch nicht alle Teile am richtigen Platz ...</h1><button id="alright2" class="alright">OK</button></div><div id="canvas-wrap"><canvas id="confetti"></canvas><div id="alertMsg3"><h1 id="alert3" class="alert">Glückwunsch!</h1><button id="alright3" class="alright">Danke</button></div></div></div><script src="confetti.js"></script><script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><script type="text/javascript" src="/static/js/main.9483f7d4.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    
+    <link rel="stylesheet" href="./src/App.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Press+Start+2P" rel="stylesheet">
+
+    <title>Redux me, Style me, Surprise me ;)</title>
+  </head>
+  <body>
+    
+    <!-- <div id="root"></div> -->
+    <div id="appMount"></div>
+
+    <div id='cover'> 
+
+      <!-- alert when wrong file to be uploaded -->
+       <div id="alertMsg">        
+         <h1 id="alert1" class="alert">Dieser Bildtyp wird nicht unterstützt</h1>        
+         <button id="alright1" class="alright">OK</button>   
+     </div>
+ 
+     <!-- alert when the picture not fixed yet -->
+     <div id="alertMsg2">
+         <h1 id="alert2" class="alert">Leider sitzen noch nicht alle Teile am richtigen Platz ...</h1>        
+         <button id="alright2" class="alright">OK</button>   
+       </div>  
+      
+       <div id="canvas-wrap">
+        <canvas id="confetti"></canvas>
+          <div id="alertMsg3">
+            <h1 id="alert3" class="alert">Glückwunsch!</h1>        
+            <button id="alright3" class="alright">Danke</button>   
+          </div>
+      </div>
+        
+    </div>
+   
+    
+        <script src="./src/confetti.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    
+    
+  </body>
+</html>
